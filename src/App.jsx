@@ -94,7 +94,7 @@ export default function App() {
           </h1>
 
           <p className="text-lg md:text-2xl font-light tracking-tight max-w-2xl opacity-80 leading-relaxed">
-            Would you choose this exact life again—every pain, every joy, every thought—forever?
+            Would you choose this exact life again?Every pain, every joy, every thought forever?
           </p>
 
           {/* Action Area */}

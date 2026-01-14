@@ -14,7 +14,7 @@ export default function LifeGrid({ weeksLived }) {
     };
 
     window.addEventListener("resize", updateSize);
-    requestAnimationFrame(updateSize); // ✅ ensures width isn't 0 on first paint
+    requestAnimationFrame(updateSize); //  ensures width isn't 0 on first paint
 
     return () => window.removeEventListener("resize", updateSize);
   }, []);
@@ -46,7 +46,7 @@ export default function LifeGrid({ weeksLived }) {
     canvas.style.width = `${realWidth}px`;
     canvas.style.height = `${realHeight}px`;
 
-    // ✅ reset transform so scale doesn't stack
+    //  reset transform so scale doesn't stack
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.scale(dpr, dpr);
 
@@ -65,7 +65,7 @@ export default function LifeGrid({ weeksLived }) {
     // If birthdate not set
     if (weeksLived == null) {
       for (let i = 0; i < TOTAL_WEEKS; i++) {
-        drawRect(i, "#333"); // ✅ visible on black
+        drawRect(i, "#333"); // visible on black
       }
       return;
     }
