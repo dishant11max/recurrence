@@ -13,7 +13,7 @@
     <div className="mt-24 w-full max-w-6xl">
       <h3 className="text-sm font-bold uppercase tracking-widest border-b border-white/20 pb-2 mb-8">Consumption Analytics</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        /* Stacked Bar for Brutalism */
+      
         <div className="flex flex-col justify-center">
             <div className="w-full h-12 flex border border-white/20">
               {stats.map((stat, i) => {
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        /* List Data */
+        
         <div className="flex flex-col gap-4">
            {stats.map((stat, i) => {
               const hoursSpent = Math.floor(daysAlive * stat.hoursPerDay);
